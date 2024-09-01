@@ -73,6 +73,10 @@ class _RestaurantListScreenState extends State<RestaurantListScreen> {
                   cuisineLower.contains(queryLower);
             }).toList();
 
+            if (restaurants.isEmpty) {
+              return const Center(child: Text('No restaurants found.'));
+            }
+
             return ListView.builder(
               itemCount: restaurants.length,
               itemBuilder: (context, index) {
