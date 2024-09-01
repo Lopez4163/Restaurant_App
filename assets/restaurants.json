@@ -2,21 +2,22 @@
     {
         "id": 1,
         "name": "The Smokehouse",
-        "cuisine": "Barbecue"
+        "cuisine": "Barbecue",
+        "image": "assets/images/bbq-img.jpg"
     },
     {
         "id": 2,
         "name": "Pinocchio's Pizza",
-        "cuisine": "Italian"
-    },
+        "cuisine": "Italian",
+        "image": "assets/images/italian-img.webp"    },
     {
         "id": 3,
         "name": "Felipe's Taqueria",
-        "cuisine": "Mexican"
-    },
+        "cuisine": "Mexican",
+        "image": "assets/images/mexican-img.jpg"    },
     {
         "id": 4,
         "name": "Tasty Burger",
-        "cuisine": "American"
-    }
+        "cuisine": "American",
+        "image": "assets/images/american-img.png"    }
 ]
