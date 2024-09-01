@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
 import '../models/restaurant.dart';
 
-// Provider for loading the restaurant list
 final restaurantListProvider = FutureProvider<List<Restaurant>>((ref) async {
   final data = await rootBundle.loadString('assets/restaurants.json');
   final List<dynamic> jsonResult = json.decode(data);
@@ -12,10 +11,8 @@ final restaurantListProvider = FutureProvider<List<Restaurant>>((ref) async {
       .toList();
 });
 
-// StateProvider for managing the search query
 final searchQueryProvider = StateProvider<String>((ref) => '');
 
-// Provider to filter the restaurant list based on the search query
 final filteredRestaurantListProvider = Provider<List<Restaurant>>((ref) {
   final searchQuery = ref.watch(searchQueryProvider).toLowerCase();
   final restaurants = ref.watch(restaurantListProvider).asData?.value ?? [];
