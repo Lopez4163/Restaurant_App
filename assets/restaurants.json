@@ -3,21 +3,34 @@
         "id": 1,
         "name": "The Smokehouse",
         "cuisine": "Barbecue",
-        "image": "assets/images/bbq-img.jpg"
+        "image": "assets/images/bbq-img.jpg",
+        "slogan": "Where the Smoke Meets the Taste!",
+        "phone": "555-123-4567",
+        "address": "123 Smoke St, Flavor Town, BBQ 12345"
+        
     },
     {
         "id": 2,
         "name": "Pinocchio's Pizza",
         "cuisine": "Italian",
-        "image": "assets/images/italian-img.webp"    },
+        "image": "assets/images/italian-img.webp",
+        "slogan": "Real Italian Flavor, No Strings Attached!",
+        "phone": "555-234-5678",
+        "address": "456 Pasta Blvd, Naples, IT 67890"   },
     {
         "id": 3,
         "name": "Felipe's Taqueria",
         "cuisine": "Mexican",
-        "image": "assets/images/mexican-img.jpg"    },
+        "image": "assets/images/mexican-img.jpg",
+        "slogan": "A Fiesta in Every Bite!",
+        "phone": "555-345-6789",
+        "address": "789 Taco Rd, Mexico City, MX 54321"  },
     {
         "id": 4,
         "name": "Tasty Burger",
         "cuisine": "American",
-        "image": "assets/images/american-img.png"    }
+        "image": "assets/images/american-img.png",
+        "slogan": "Burgers that Taste Like Home!",
+        "phone": "555-456-7890",
+        "address": "321 Burger Ln, Springfield, USA 98765"    }
 ]
