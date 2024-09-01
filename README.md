@@ -3,10 +3,13 @@ Overview
 ------------
 The Restaurant App is a Flutter application designed to display a list of restaurants and provide search functionality to filter the list based on the restaurant name. The app utilizes Riverpod for state management to ensure efficient and reactive updates.
 
-**Demo:**
-![App Demo](assets/app-demo.gif)
+<p align="center">
+  <a href="https://github.com/Lopez4163/flutter_app/blob/main/assets/gif/app-demo.gif?raw=true">
+    <img src="https://github.com/Lopez4163/flutter_app/blob/main/assets/gif/app-demo.gif?raw=true" alt="App Demo">
+  </a>
+</p>
 
-Features
+
 ------------
 
 Load Restaurant Data: Fetches and loads restaurant data from a local JSON file.
@@ -32,23 +35,15 @@ Bash
 ```
 flutter pub get
 ```
-**Add the JSON File**
-Download the restaurants.json file here:
-[drive.google.com/file/d/1uN_gk2oJ5F4JMAsbjThTmER3LffulsZ2/view?usp=sharing](http://drive.google.com/file/d/1uN_gk2oJ5F4JMAsbjThTmER3LffulsZ2/view?usp=sharing)
 
-**Check JSON Data is imported** 
-In the pubspec.yaml make sure the JSON file is imported into the assets:
-```
-flutter:
-assets:
-
-- assets/restaurants.json
-```
 **Run the App**
-A mobile simulator must be started, use the following command to start an ios simulator:
-*utilize any simulator you want*
+A mobile simulator must be started, use the following command to start an ios simulator:<br>
+*- Utilize Any Simulator You Want*<br>
+*- Will Need Excode for This Command To work*
 
-```flutter emulators --launch ios```
+```
+flutter emulators --launch ios
+```
 
 Once the simulator is fully booted run the command below to start the application:
 ```
@@ -56,10 +51,27 @@ flutter run
 ```
 After a few seconds the simulator should display the application.
 
+**ANOTHER OPTION:**
+
+If that doesnt work you can select the main.dart file in the /lib directory in your IDE. Run the simulator and once booted use the run command or debugger on your IDE.
+
 
 Usage
------
+------
 Upon running the app, you will see a list of restaurant names and their cuisines. Use the search bar at the top of the screen to filter the list by restaurant name or cuisine.
+
+**Selecting a Restaurant
+To view details about a restaurant:**
+
+**Tap on a Restaurant**: From the list of restaurants, tap on any restaurant item.
+View Details: You will be navigated to a detailed view of the selected restaurant. This screen displays additional information including the restaurant's slogan, phone number, and address, along with its image.
+Viewing Restaurant Information
+In the Restaurant Details Screen:
+
+**Image**: Displays a large image of the restaurant.
+Slogan: Shows a catchy slogan for the restaurant.
+Phone Number: Provides a contact number with a phone emoji for visual appeal.
+Address: Shows a fake address for demonstration purposes, prefixed with a map emoji.
 
 
 State Management with Riverpod
