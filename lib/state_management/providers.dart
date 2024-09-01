@@ -17,7 +17,7 @@ final searchQueryProvider = StateProvider<String>((ref) => '');
 
 // Provider to filter the restaurant list based on the search query
 final filteredRestaurantListProvider = Provider<List<Restaurant>>((ref) {
-  final searchQuery = ref.watch(searchQueryProvider).state.toLowerCase();
+  final searchQuery = ref.watch(searchQueryProvider).toLowerCase();
   final restaurants = ref.watch(restaurantListProvider).asData?.value ?? [];
 
   if (searchQuery.isEmpty) {
