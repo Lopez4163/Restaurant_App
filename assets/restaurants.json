@@ -4,7 +4,7 @@
         "name": "The Smokehouse",
         "cuisine": "Barbecue",
         "image": "assets/images/bbq-img.jpg",
-        "slogan": "Where the Smoke Meets the Taste!",
+        "slogan": "Meeaats a Smokey!",
         "phone": "555-123-4567",
         "address": "123 Smoke St, Flavor Town, BBQ 12345"
         
@@ -14,7 +14,7 @@
         "name": "Pinocchio's Pizza",
         "cuisine": "Italian",
         "image": "assets/images/italian-img.webp",
-        "slogan": "Real Italian Flavor, No Strings Attached!",
+        "slogan": "Pizza Pizza!",
         "phone": "555-234-5678",
         "address": "456 Pasta Blvd, Naples, IT 67890"   },
     {
