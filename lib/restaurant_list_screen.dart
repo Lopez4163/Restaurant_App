@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
+import 'dart:async'; // Import for Timer
+
 import 'package:flutter/services.dart' show rootBundle;
 
 class RestaurantListScreen extends StatefulWidget {
@@ -12,6 +14,7 @@ class RestaurantListScreen extends StatefulWidget {
 class _RestaurantListScreenState extends State<RestaurantListScreen> {
   late Future<List<Restaurant>> _restaurants;
   String _searchQuery = "";
+  Timer? _debounce; // Timer for debouncing search input
 
   @override
   void initState() {
@@ -36,8 +39,12 @@ class _RestaurantListScreenState extends State<RestaurantListScreen> {
             padding: const EdgeInsets.all(8.0),
             child: TextField(
               onChanged: (value) {
-                setState(() {
-                  _searchQuery = value;
+                if (_debounce?.isActive ?? false) _debounce?.cancel();
+
+                _debounce = Timer(const Duration(milliseconds: 150), () {
+                  setState(() {
+                    _searchQuery = value;
+                  });
                 });
               },
               decoration: const InputDecoration(
