@@ -33,7 +33,19 @@ class _RestaurantListScreenState extends State<RestaurantListScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Restaurants'),
+        title: const Center(
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                '🍽️',
+                style: TextStyle(fontSize: 24),
+              ),
+              SizedBox(width: 4),
+              Text('Top Restaurants Near You'),
+            ],
+          ),
+        ),
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(kToolbarHeight),
           child: Padding(
