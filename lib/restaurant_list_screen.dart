@@ -48,7 +48,7 @@ class _RestaurantListScreenState extends State<RestaurantListScreen> {
                 });
               },
               decoration: const InputDecoration(
-                hintText: 'Search...',
+                hintText: 'Enter Restaurant Name or Cuisine...',
                 border: OutlineInputBorder(),
               ),
             ),
