@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
-import 'dart:async'; // Import for Timer
-
+import 'dart:async';
 import 'package:flutter/services.dart' show rootBundle;
+import '../models/restaurant.dart';
+import 'restaurant_details_screen.dart';
 
 class RestaurantListScreen extends StatefulWidget {
   const RestaurantListScreen({super.key});
@@ -14,7 +15,7 @@ class RestaurantListScreen extends StatefulWidget {
 class _RestaurantListScreenState extends State<RestaurantListScreen> {
   late Future<List<Restaurant>> _restaurants;
   String _searchQuery = "";
-  Timer? _debounce; // Timer for debouncing search input
+  Timer? _debounce;
 
   @override
   void initState() {
@@ -90,28 +91,22 @@ class _RestaurantListScreenState extends State<RestaurantListScreen> {
                     restaurant.cuisine,
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => RestaurantDetailsScreen(
+                          restaurant: restaurant,
+                        ),
+                      ),
+                    );
+                  },
                 );
               },
             );
           }
         },
       ),
-    );
-  }
-}
-
-class Restaurant {
-  final int id;
-  final String name;
-  final String cuisine;
-
-  Restaurant({required this.id, required this.name, required this.cuisine});
-
-  factory Restaurant.fromJson(Map<String, dynamic> json) {
-    return Restaurant(
-      id: json['id'],
-      name: json['name'],
-      cuisine: json['cuisine'],
     );
   }
 }

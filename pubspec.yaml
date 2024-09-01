@@ -25,6 +25,9 @@ flutter:
   uses-material-design: true
   assets:
     - assets/restaurants.json
-    - assets/images/
+    - assets/images/bbq-img.jpg
+    - assets/images/italian-img.webp
+    - assets/images/mexican-img.jpg
+    - assets/images/american-img.png
 
 
