@@ -85,7 +85,7 @@ The Restaurant App implements a real-time filtering mechanism that allows users 
         
 Resources
 ------------
-If you need assistance setting up your flutter enviorment i reccomend the following resources:
+If you need assistance setting up your flutter environment i recommend the following resources:
 
 **Flutter Docs:** https://docs.flutter.dev/get-started/install?_gl=1
 
