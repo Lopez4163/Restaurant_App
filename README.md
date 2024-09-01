@@ -3,6 +3,9 @@ Overview
 ------------
 The Restaurant App is a Flutter application designed to display a list of restaurants and provide search functionality to filter the list based on the restaurant name. The app utilizes Riverpod for state management to ensure efficient and reactive updates.
 
+**Demo:**
+![App Demo](assets/app-demo.gif)
+
 Features
 ------------
 
