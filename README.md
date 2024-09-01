@@ -82,12 +82,7 @@ The Restaurant App implements a real-time filtering mechanism that allows users 
 3.  **Data Filtering**: The `FutureBuilder` widget rebuilds the UI with the filtered list of restaurants. The filtering is done using the `where` method, which iterates over the list of restaurants and checks if the restaurant's name or cuisine contains the search query (case-insensitive).
     
 4.  **Filtered List**: The filtered list of restaurants is then passed to the `ListView.builder` widget, which displays the filtered list of restaurants.
-    
-    
-Contributing
---------------
-This project is licensed under the MIT License. See the LICENSE file for details.
-
+        
 Resources
 ------------
 If you need assistance setting up your flutter enviorment i reccomend the following resources:
