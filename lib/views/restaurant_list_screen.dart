@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'dart:async';
 import 'package:flutter/services.dart' show rootBundle;
-import '../models/restaurant.dart';
+import '../../models/restaurant.dart';
 import 'restaurant_details_screen.dart';
 
 class RestaurantListScreen extends StatefulWidget {
