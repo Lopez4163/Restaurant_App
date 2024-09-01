@@ -58,7 +58,7 @@ class _RestaurantListScreenState extends State<RestaurantListScreen> {
             child: TextField(
               onChanged: (value) {
                 setState(() {
-                  _searchQuery = value; // Update search query as the user types
+                  _searchQuery = value;
                 });
               },
               decoration: const InputDecoration(
@@ -85,7 +85,14 @@ class _RestaurantListScreenState extends State<RestaurantListScreen> {
               itemBuilder: (context, index) {
                 final restaurant = restaurants[index];
                 return ListTile(
-                  title: Text(restaurant.name),
+                  title: Text(
+                    restaurant.name,
+                    style: Theme.of(context).textTheme.titleLarge,
+                  ),
+                  subtitle: Text(
+                    restaurant.cuisine,
+                    style: Theme.of(context).textTheme.bodySmall,
+                  ),
                 );
               },
             );
